@@ -1,0 +1,19 @@
+Collaboration between Brian Won and William Yang
+
+Stage 1: Contextualization
+
+A. Text-Based Adventure Game
+
+Let's step away from the graphics-heavy, story-lacking games that are popular today. Let's use our imagination instead, and build a new world on words alone. 
+Features: arraylist that contains all the rooms that one can possibly explore
+
+Calling a certain room in an arraylist will call for another arraylist that contains descriptions of that room, etc
+
+user-input commands will allow for interaction with the world
+"eg : go north" = character goes forward a set value X, and this value X will be documented in another arraylist.
+
+Map will be a grid, probably using two arrays (one that is linear in the x, and another linear in the y) 
+
+Using 2D array [y][x]
+
+row x column 
