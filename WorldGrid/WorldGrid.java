@@ -2,6 +2,8 @@ import java.util.*;
 
 public class WorldGrid{
     public static void main(String[]args){
+	WorldGrid A = new WorldGrid();
+	System.out.println(A.toString());
     }
 
 
@@ -23,5 +25,16 @@ public class WorldGrid{
 	int y = rand.nextInt(maxSize - minSize) + minSize;
 	int x = rand.nextInt(maxSize - minSize) + minSize;
 	rooms = new Object[y][x];
+    }
+
+    public String toString(){
+	String answer = "";
+	for(int i = 0; i < rooms.length; i++){
+	    answer += rooms[i] + ":";
+	    for(int a = 0; a < rooms[i].length;a++){
+		answer += (String)(rooms[i][a]) + " ";
+	    }
+	}
+	return answer;
     }
 }
