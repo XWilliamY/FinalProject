@@ -13,3 +13,9 @@ E. More examples!
 Save and load function?
 
 II) Made WorldGrid.java, which will set up the grid for the game 
+
+1.6.15
+I) Finished basic WorldGrid.java (able to set up an empty grid)
+II) Now testing by inputting sample rooms, schnitzel and noodles. 
+III) New class 'Rooms.java' made 
+

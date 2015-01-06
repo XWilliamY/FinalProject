@@ -1,4 +1,6 @@
 import java.util.*;
+import java.io.File;
+import java.io.FileNotFoundException;
 
 public class WorldGrid{
     public static void main(String[]args){
@@ -13,11 +15,13 @@ public class WorldGrid{
     public WorldGrid(){
 	//standard dungeon has 25 rooms
 	rooms = new Object[5][5];
+	clear();
     }
 
-    public WorldGrid(int x, int y){
+    public WorldGrid(int rows, int cols){
 	//user input
-	rooms =  new Object[y][x];
+	rooms =  new Object[rows][cols];
+	clear();
     }
 
     public WorldGrid( boolean randomize, int minSize, int maxSize){
@@ -25,16 +29,31 @@ public class WorldGrid{
 	int y = rand.nextInt(maxSize - minSize) + minSize;
 	int x = rand.nextInt(maxSize - minSize) + minSize;
 	rooms = new Object[y][x];
+	clear();
     }
+
+    private void clear(){
+	for(int i = 0 ; i < rooms.length;i++){
+	    for(int a = 0; a < rooms[i].length;a++){
+		rooms[i][a] = "";
+	    }
+	}
+    }
+
 
     public String toString(){
 	String answer = "";
 	for(int i = 0; i < rooms.length; i++){
-	    answer += rooms[i] + ":";
+	    answer += ":";
 	    for(int a = 0; a < rooms[i].length;a++){
 		answer += (String)(rooms[i][a]) + " ";
 	    }
+	    answer += ":";
 	}
 	return answer;
     }
+
+    public void fill(){
+    }
+
 }
