@@ -3,14 +3,17 @@ import java.io.File;
 import java.io.FileNotFoundException;
 
 public class WorldGrid{
-    public static void main(String[]args){
+    public static void main(String[]args)throws FileNotFoundException{
 	WorldGrid A = new WorldGrid();
+	System.out.println(A.toString());
+	A.importRoomsFromFile("Rooms.txt");
 	System.out.println(A.toString());
     }
 
 
     Random rand = new Random();
     private Object[][] rooms;
+    
 
     public WorldGrid(){
 	//standard dungeon has 25 rooms
@@ -46,14 +49,35 @@ public class WorldGrid{
 	for(int i = 0; i < rooms.length; i++){
 	    answer += ":";
 	    for(int a = 0; a < rooms[i].length;a++){
-		answer += (String)(rooms[i][a]) + " ";
+		answer += (String)(rooms[i][a]) + "BEEP";
 	    }
 	    answer += ":";
 	}
 	return answer;
     }
 
-    public void fill(){
+    public void importRoomsFromFile(String fileName) throws FileNotFoundException{
+	File text = new File(fileName);
+	Scanner sc = new Scanner(text);
+	String allPhrases = "";
+	while(sc.hasNext()){
+	    allPhrases += sc.next() + " ";
+	    System.out.println("yes");
+	}
+	String[] allRooms = allPhrases.split("]]");
+	
+	int where = 0;
+	for(int i = 0; i < rooms.length; i++){
+	    where += i;
+	    for(int a = 0; a < rooms[i].length;a++){
+		where += a;
+		if(where < allRooms.length){
+		rooms[i][a] = allRooms[where];
+		}
+	    }
+	}
     }
+    
+
 
 }

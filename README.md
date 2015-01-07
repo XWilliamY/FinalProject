@@ -22,4 +22,5 @@ IV) Working on accepting input from a file for description of rooms
 
 1.7.15
 I) Continuing work on accepting input from a file for description of rooms 
-
+A. Can accept inputs from a file, working on how to store multiple phrases. 
+B. Made importRoomsFromFile capable of splitting at "-" to signify different rooms. 
