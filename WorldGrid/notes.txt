@@ -1,0 +1,19 @@
+identification for each room
+list of descriptions for each passage way etc.
+separate data from actual classes: this file can contain just descriptions.txt
+
+connections.txt room IDs a certain room has access to 
+
+[Room 1: Window on Left: Door on right: ROOM DESCRIPTION]
+
+// when java file calls this:
+// it'll split at "[" "]"
+// save that to a 2d array [Room ID][everything else]
+[room id][everything else], [room id][everything else]
+//to call room 1: room[0][0] 
+//let's say you're in room 1 and you climb through a window
+//room 2 has a window
+//room 3 has a window
+//room 4 has a window
+//this is where randomness comes into play
+//you can end up in either 2, 3, 4
