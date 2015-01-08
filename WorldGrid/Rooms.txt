@@ -1,1 +1,6 @@
-You're on a train. You don't know where you're going. - But maybe you do. - Does. - It. - Really. - Matter? - I don't think so. - I don't know. 
+You're on a train. You don't know where you're going. - But maybe you do. - Does. - It. - Really. - Matter? - I don't think so. - I don't know. identification for each room
+list of descriptions for each passage way etc.
+separate data from actual classes: this file can contain just descriptions.txt
+
+connections.txt room IDs a certain room has access to 
+
