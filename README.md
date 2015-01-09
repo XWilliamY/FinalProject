@@ -28,3 +28,10 @@ B. Made importRoomsFromFile capable of splitting at "-" to signify different roo
 1.8.15
 I) Discussion of how to assign IDs to rooms and link rooms together. 
 II) importRoomsFromFile now imports descriptions of all rooms into a 2D Object array 'rooms'. [][this part is filled]
+
+1.9.15
+I) Planning to add an inventory array to Character Classes
+II) Drafting of character classes
+III) Brian working on Rooms.java
+IV) items, descriptions, and other things 
+V) Refocusing methodology, attempting to build just one room first.

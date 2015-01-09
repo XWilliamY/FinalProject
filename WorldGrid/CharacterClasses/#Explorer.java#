@@ -3,7 +3,7 @@ import java.util.*;
 public class Explorer{
     private String name;
     private int HP, STR, INT, DEX;
-    private String [] inventory = new String[10];
+    private String [] inventory = new String[10]          ;
     Random rand = new Random();
 
     public void setName(String name){

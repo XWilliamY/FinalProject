@@ -43,7 +43,6 @@ public class WorldGrid{
     public String toString(){
 	String answer = "";
 	for(int i = 0; i < rooms.length; i++){
-	    answer += ":";
 	    for(int a = 0; a < rooms[i].length;a++){
 		answer += (String)(rooms[i][a]) + "BEEP";
 	    }
