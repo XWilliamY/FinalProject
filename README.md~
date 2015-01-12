@@ -34,4 +34,11 @@ I) Planning to add an inventory array to Character Classes
 II) Drafting of character classes
 III) Brian working on Rooms.java
 IV) items, descriptions, and other things 
-V) Refocusing methodology
+V) Refocusing methodology, attempting to build just one room first.
+
+1.12.15
+I) WorldGrid.java sets up world
+II) Room.java creates different rooms
+III) Working on Items.java to 'make' different items 
+IV) Room.java completed, I'm updating it so it can A) import all rooms B) store in an array C) any can be called at once 
+
