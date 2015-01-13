@@ -33,13 +33,13 @@ public class Room{
     }
 
     public static void main(String[]args)throws FileNotFoundException{
-	Room a = new Room();
-	a.setID(1);
-	a.setDes();
-	System.out.println(a.getDes());
-	Room b = new Room();
-	b.setID(0);
+    	Room a = new Room();
+    	a.setID(1);
+    	a.setDes();
+    	System.out.println(a.getDes());
+    	Room b = new Room();
+    	b.setID(0);
 	b.setDes();
-	System.out.println(b.getDes());
+    	System.out.println(b.getDes());
     }
 }
