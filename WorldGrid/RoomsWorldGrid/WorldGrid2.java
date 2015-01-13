@@ -15,7 +15,7 @@ public class WorldGrid2{
 
     //input room descriptions to file
     public void importRoomsFromFile(String fileName) throws FileNotFoundException{
-	file text = new File(fileName);
+	File text = new File(fileName);
 	Scanner sc = new Scanner(text);
 	String allDescriptions = "";
 	while(sc.hasNext()){
