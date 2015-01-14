@@ -6,7 +6,7 @@ public class Room extends WorldGrid2{
     private int ID;
     private String description;
 
-    public Room(){
+    public Room()throws FileNotFoundException{
     }
 
     public void setID(int x){
