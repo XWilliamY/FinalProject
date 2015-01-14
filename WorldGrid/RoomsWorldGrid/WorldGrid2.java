@@ -43,12 +43,13 @@ public class WorldGrid2{
 	File text = new File(fileName);
 	Scanner sc = new Scanner(text);
 	String allDescriptions = "";
+	int howMany = 0;
 	while(sc.hasNext()){
 	    allDescriptions += sc.next() + " ";
 	}
 
 	allRooms = allDescriptions.split("]]"); // store all to allRooms
-	System.out.println("yes");
+	
 	
     }
 
