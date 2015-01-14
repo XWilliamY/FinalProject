@@ -1,0 +1,8 @@
+Bedroom: One]]
+Bathroom: Two]]
+Hello: three]]
+Goodbye: four]]
+so long: five]]
+what: six]]
+
+make size of array = the number of rooms here 
