@@ -5,9 +5,9 @@ import java.io.FileNotFoundException;
 public class WorldGrid2{
     public static void main(String[]args) throws FileNotFoundException{
 	WorldGrid2 A = new WorldGrid2();
-	A.importRoomsFromFile("RoomDescriptions.txt");
 	System.out.println(A.getRoom(0));
-	
+	System.out.println(A.getSize());
+	//System.out.println(A.getRoom(0));
 	
     }
 
@@ -18,18 +18,14 @@ public class WorldGrid2{
 
     //constructors store descriptions
     public WorldGrid2()throws FileNotFoundException{
-	setSize(25);
-	rooms = new Object [25]; 
+	importRoomsFromFile("RoomDescriptions.txt");
+	rooms = new Room [size]; 
 	//make rooms based on text file
 	//initialize each room based on text file 
     }
 
-    public WorldGrid2(int size)throws FileNotFoundException{
-	setSize(size);
-	rooms = new Object [size];
-    }
-
-    //so size is malleable
+    //the user shouldn't be able to manipulate the size of the array
+    //this is for the program to adapt based on how many rooms are available
     public void setSize(int size){
 	this.size = size;
     }
@@ -49,21 +45,24 @@ public class WorldGrid2{
 	}
 
 	allRooms = allDescriptions.split("]]"); // store all to allRooms
-	
-	
+	//previous line of code also conveniently "clears" allRooms
+	size = allRooms.length;
+	//new size of MAP should reflect new size of allRooms
+	//or parseint first line
     }
-
 
     //Object [] rooms will be an array consisting of rooms
     //[room1, room2, room3, room4, room5]
     //calling on room1 will bring up room 1's description and stuff 
 
-
-    //get specific room at x index
-    public String getRoom(int ID){
-	return allRooms[ID];
+    //Room[i] = new Room(id and description)
+    public void setUpRooms()throws FileNotFoundException{
+	for(int i =0; i < getSize(); i++){
+	    rooms[i] = new Room(i, getDescription(i));
+	    //rooms = [contains a room with ID 0, desc at 0], [contains a room with ID 1, desc at 1]...
+	}
     }
-
+    
 
 
 

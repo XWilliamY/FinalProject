@@ -6,9 +6,9 @@ public class Room extends WorldGrid2 {
     private int ID;
     private String description;
 
-    public Room(int ID)throws FileNotFoundException{
+    public Room(int ID, String description)throws FileNotFoundException{
 	setID(ID);
-	setDes();
+	setDes(description);
     }
 
     public void setID(int x){
@@ -19,8 +19,8 @@ public class Room extends WorldGrid2 {
 	return ID;
     }
 
-    public void setDes(){
-	description = getRoom(ID);
+    public void setDes(String description){
+	this.description = description; 
     }
 
     public String getDes(){
@@ -28,8 +28,8 @@ public class Room extends WorldGrid2 {
     }
 
     public static void main(String[]args)throws FileNotFoundException{
-    	Room a = new Room(0);
-	Room b = new Room(1);
+    	Room a = new Room(0, "hello");
+	Room b = new Room(1, "what");
 	System.out.println(a.getDes());
     	System.out.println(b.getDes());
     }
