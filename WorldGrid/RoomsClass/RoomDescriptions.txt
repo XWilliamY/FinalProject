@@ -1,1 +1,2 @@
-Bathroom: This is a nice bathroom with a giant mirror and an assortment of toothpastes]]Bedroom: There's only a bed and a closet
+Front door,0,"",There's the front door. Damn it. It's locked. Along the wall there are coat hooks and key hooks. There's a little table with a flower pot on it.[]
+Hallway,1,"",A carpet extends down the hallway. There's a light above but it's flickering because the bulb is dying. This only adds to the creepiness of the house.
