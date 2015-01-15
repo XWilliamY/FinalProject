@@ -42,3 +42,13 @@ II) Room.java creates different rooms
 III) Working on Items.java to 'make' different items 
 IV) Room.java completed, I'm updating it so it can A) import all rooms B) store in an array C) any can be called at once 
 
+1.13.15
+I) Working on items.java: creating items class that contains a few different identifiers 
+II) Trying to dovetail worldgrid and room.java together
+
+1.14.15
+I) WorldGrid2 will create a new grid with all descriptions of rooms stored. Room class will refer to WorldGrid2 to match a description with its room ID. 
+
+1.15.15
+I) The disparity between what is desired and what is created is never more evident than in my WorldGrid2.java code. Will try to A) import information a) first line sets size of array B) sort descriptions into rooms and give them IDs
+

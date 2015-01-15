@@ -63,7 +63,9 @@ public class WorldGrid2{
 	}
     }
     
-
+    public String getRoomDes(int ID){
+	rooms[ID].getDes();
+    }
 
 
 }

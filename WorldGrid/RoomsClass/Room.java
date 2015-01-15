@@ -17,15 +17,8 @@ public class Room{
 	return ID;
     }
 
-    public void setDes()throws FileNotFoundException{
-	File text = new File("RoomDescriptions.txt");
-	Scanner sc = new Scanner(text);
-	String all = "";
-	while (sc.hasNext()){
-	    all += sc.next() + " ";
-	}
-	String[] allDes = all.split("]]");
-	description = allDes[ID];
+    public void setDes(){
+	description = super.allRooms[ID];
     }
 
     public String getDes(){
