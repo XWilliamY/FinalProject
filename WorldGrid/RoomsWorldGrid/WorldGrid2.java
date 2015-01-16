@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 public class WorldGrid2{
     public static void main(String[]args) throws FileNotFoundException{
 	WorldGrid2 A = new WorldGrid2();
-	System.out.println(A.getRoom(0));
+	//System.out.println(A.getRoom(0));
 	System.out.println(A.getSize());
 	//System.out.println(A.getRoom(0));
 	
@@ -68,4 +68,4 @@ public class WorldGrid2{
     }
 
 
-}
+    }
