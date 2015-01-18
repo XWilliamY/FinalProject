@@ -8,6 +8,7 @@ public class WorldGrid3{
 	WorldGrid3 A = new WorldGrid3 ();
 	//System.out.println(A.toString());
 	System.out.println(A.getNameOfRoom(0));
+	System.out.println(A.getNameOfRoom(1));
     }
 
 
@@ -37,16 +38,17 @@ public class WorldGrid3{
 	setSize(allRooms.length);
     }
 
-    public void setUpRooms() throws FileNotFoundException{
-	for(int i = 0; i < allRooms.length; i++){
+    public void setUpRooms(Room [] array) throws FileNotFoundException{
+	for(int i = 0; i < allRooms.length - 1; i++){
 	    String [] pieces = allRooms[i].split(":");
-	    rooms[i] = new Room((Integer.parseInt(pieces[0])), pieces[1], pieces[2]);
+	    array[i] = new Room(i, pieces[0], pieces[1]);
 	}
     }
 
     public WorldGrid3()throws FileNotFoundException{
 	importRoomsFromFile("RoomDescriptions.txt");
 	rooms = new Room [size];
+	setUpRooms(rooms);
     }
 
     public String toString(){
@@ -58,7 +60,7 @@ public class WorldGrid3{
     }
 
     public String getNameOfRoom(int index){
-	return rooms[index].getDes();
+	return rooms[index].getTitle();
     }
 
     //toString() -> [1, "Bedroom, Description"], [2, "House", whatever]

@@ -1,8 +1,7 @@
-1: Bedroom: You sleep here]]
-Bathroom: Two]]
+ Bedroom: What why do you keep adding yourself]]
+Bathroom: Description here]]
 Hello: three]]
 Goodbye: four]]
 so long: five]]
 what: six]]
 
-make size of array = the number of rooms here 

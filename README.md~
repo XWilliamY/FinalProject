@@ -52,3 +52,10 @@ I) WorldGrid2 will create a new grid with all descriptions of rooms stored. Room
 1.15.15
 I) The disparity between what is desired and what is created is never more evident than in my WorldGrid2.java code. Will try to A) import information a) first line sets size of array B) sort descriptions into rooms and give them IDs
 
+1.16.15
+I) nullPointerException preventing completion of bridge
+
+1.18.15 
+I) Went on a debate tournament, is now fixing prominent problems like the nullPointerException.
+A) Attempting to solve for numberFormatException. 
+B) ArrayIndexOutOfBounds
