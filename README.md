@@ -60,3 +60,4 @@ I) Went on a debate tournament, is now fixing prominent problems like the nullPo
 A) Attempting to solve for numberFormatException. 
 B) ArrayIndexOutOfBounds
 II) Overcame arrayIndexOutOfBounds and nullPointer Exception error. 
+III) Setting up functions for player movement later on 
