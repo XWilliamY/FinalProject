@@ -7,8 +7,13 @@ public class WorldGrid3{
     public static void main(String[]args)throws FileNotFoundException{
 	WorldGrid3 A = new WorldGrid3 ();
 	//System.out.println(A.toString());
-	System.out.println(A.getNameOfRoom(0));
-	System.out.println(A.getNameOfRoom(1));
+	int a = 1;
+	System.out.println(A.getNameOfRoom(a));
+	System.out.println(A.getDesOfRoom(a));
+	a --;
+	System.out.println(A.getNameOfRoom(a));
+	System.out.println(A.getDesOfRoom(a));
+	System.out.println(A.getWhereIAm(a));
     }
 
 
@@ -63,6 +68,14 @@ public class WorldGrid3{
 	return rooms[index].getTitle();
     }
 
-    //toString() -> [1, "Bedroom, Description"], [2, "House", whatever]
+    public String getDesOfRoom(int index){
+	return rooms[index].getDes();
+    }
+
+    public String getWhereIAm(int index){
+	String here = "";
+	here += "Location: " + rooms[index].getTitle() + "\nDescription: " + rooms[index].getDes();
+	return here;
+    }
 
 }
