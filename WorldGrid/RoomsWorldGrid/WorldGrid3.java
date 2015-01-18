@@ -7,7 +7,7 @@ public class WorldGrid3{
     public static void main(String[]args)throws FileNotFoundException{
 	WorldGrid3 A = new WorldGrid3 ();
 	//System.out.println(A.toString());
-	int a = 1;
+	int a = 3;
 	System.out.println(A.getNameOfRoom(a));
 	System.out.println(A.getDesOfRoom(a));
 	a --;

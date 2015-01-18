@@ -61,3 +61,4 @@ A) Attempting to solve for numberFormatException.
 B) ArrayIndexOutOfBounds
 II) Overcame arrayIndexOutOfBounds and nullPointer Exception error. 
 III) Setting up functions for player movement later on 
+IV) Setting up Explorer.java, wondering if STR, INT, and DEX will contribute to game mode, or if we should remove. 
