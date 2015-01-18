@@ -54,4 +54,18 @@ public class Explorer{
 	setDEX(1);
     }
 
+    public Explorer(String name){
+	setName(name);
+	setHP(30);
+	setSTR(1);
+	setINT(1);
+	setDEX(1);
+    }
+
+    public static void main(String[]args){
+	Explorer A = new Explorer();
+	System.out.println(A.getName());
+	Explorer B = new Explorer("Hello");
+	System.out.println(B.getName());
+    }
 }
