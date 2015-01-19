@@ -73,5 +73,5 @@ D) Contains methods to move up and down in the array
 E) Will contain modules 
 III) Writing goWhere() command, meeting "error: cannot find symbol"
 IV) A wild "NullPointerException" appears! This happens when I run getWhereIAm()
-
+V) Solved "NullPointerException". goForward() and goBackward() now functional. 
 
