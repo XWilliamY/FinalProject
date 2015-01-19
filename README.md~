@@ -65,3 +65,12 @@ IV) Setting up Explorer.java, wondering if STR, INT, and DEX will contribute to 
 
 1.19.15 
 I) Making a basic Driver to put everything together. 
+II) Driver will:
+A) Make a new room at index 0. [not sure if this step is required]
+B) Set player location at the beginning, 0.
+C) Will print out the description and title of which room you are in
+D) Contains methods to move up and down in the array
+E) Will contain modules 
+III) Writing goWhere() command, meeting "error: cannot find symbol"
+IV) A wild "NullPointerException" appears! This happens when I run 
+

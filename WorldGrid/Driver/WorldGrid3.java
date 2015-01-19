@@ -73,9 +73,14 @@ public class WorldGrid3{
     }
 
     public String getWhereIAm(int index){
-	String here = "";
-	here += "Location: " + rooms[index].getTitle() + "\nDescription: " + rooms[index].getDes();
-	return here;
+	if(index < getSize()){
+	    String here = "";
+	    here += "Location: " + rooms[index].getTitle() + "\nDescription: " + rooms[index].getDes();
+	    return here;
+	}
+	else{
+	    return "You seem to be out of range. That's strange.";
+	}
     }
 
 }

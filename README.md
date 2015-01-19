@@ -71,3 +71,7 @@ B) Set player location at the beginning, 0.
 C) Will print out the description and title of which room you are in
 D) Contains methods to move up and down in the array
 E) Will contain modules 
+III) Writing goWhere() command, meeting "error: cannot find symbol"
+IV) A wild "NullPointerException" appears! This happens when I run getWhereIAm()
+
+
