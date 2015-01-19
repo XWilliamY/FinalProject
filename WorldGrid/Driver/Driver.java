@@ -21,22 +21,22 @@ public class Driver extends WorldGrid3{
     public boolean goWhere(String direction){
 	direction.toLowerCase();
 	if(direction.equals("north") || direction.equals("west") || direction.equals("go up")){
-	    if((getLocation + 1) >= getSize()){
+	    if((getLocation() + 1) >= getSize()){
 		System.out.println("How did you fall off the grid? I don't think there's anything beyond this room. Go back.");
 		return false;
 	    }
 	    else{
-		you.setLocation(you.getLocation() + 1);
+		setLocation(getLocation() + 1);
 		return true;
 	    }
 	}
 	else if(direction.equals("south") || direction.equals("east") || direction.equals("go down")){
-	    if((getLocation - 1) <= getSize()){
+	    if((getLocation() - 1) <= getSize()){
 		System.out.println("How did you break the game? I don't think there's anything beyond the first point. Go back.");
 		return false;
 	    }
 	    else{
-		you.setLocation(you.getLocation() - 1);
+		setLocation(getLocation() - 1);
 		return true;
 	    }
 	}
