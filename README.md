@@ -62,3 +62,12 @@ B) ArrayIndexOutOfBounds
 II) Overcame arrayIndexOutOfBounds and nullPointer Exception error. 
 III) Setting up functions for player movement later on 
 IV) Setting up Explorer.java, wondering if STR, INT, and DEX will contribute to game mode, or if we should remove. 
+
+1.19.15 
+I) Making a basic Driver to put everything together. 
+II) Driver will:
+A) Make a new room at index 0. [not sure if this step is required]
+B) Set player location at the beginning, 0.
+C) Will print out the description and title of which room you are in
+D) Contains methods to move up and down in the array
+E) Will contain modules 
