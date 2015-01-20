@@ -8,7 +8,7 @@ public class Driver extends WorldGrid3{
     }
 
     public Driver() throws FileNotFoundException{
-	Room A = new Room(0, getNameOfRoom(0), getDesOfRoom(0));
+	Room A = new Room(0, getNameOfRoom(0), getDesOfRoom(0), getItemsOfRoom(0));
 	//sets up the first room you'll be in 
 	//sets up the explorer, you
 	you.setLocation(0);

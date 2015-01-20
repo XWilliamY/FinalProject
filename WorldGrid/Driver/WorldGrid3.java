@@ -9,7 +9,7 @@ public class WorldGrid3{
 	//System.out.println(A.toString());
 	int a = 3;
 	System.out.println(A.getNameOfRoom(a));
-	System.out.println(A.getDesOfRoom(a));
+	System.out.println(A.getItemsOfRoom(a));
 	a --;
 	System.out.println(A.getNameOfRoom(a));
 	System.out.println(A.getDesOfRoom(a));
@@ -18,7 +18,7 @@ public class WorldGrid3{
 
 
     Random rand = new Random();
-    private Room [] rooms;
+    public Room [] rooms;
     private String[] allRooms;
     private int size;
 
@@ -46,7 +46,7 @@ public class WorldGrid3{
     public void setUpRooms(Room [] array) throws FileNotFoundException{
 	for(int i = 0; i < allRooms.length - 1; i++){
 	    String [] pieces = allRooms[i].split(":");
-	    array[i] = new Room(i, pieces[0], pieces[1]);
+	    array[i] = new Room(i, pieces[0], pieces[1], pieces[2]);
 	}
     }
 
@@ -70,6 +70,10 @@ public class WorldGrid3{
 
     public String getDesOfRoom(int index){
 	return rooms[index].getDes();
+    }
+
+    public String getItemsOfRoom(int index){
+	return rooms[index].getItems();
     }
 
     public String getWhereIAm(int index){

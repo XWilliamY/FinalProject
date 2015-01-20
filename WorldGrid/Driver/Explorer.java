@@ -2,8 +2,8 @@ import java.util.*;
 
 public class Explorer{
     private String name;
-    private int HP, STR, INT, DEX, location;
-    private String [] inventory = new String[10];
+    private int location;
+    private int [] inventory = new int[10];
     Random rand = new Random();
 
     public void setLocation(int index){
@@ -18,62 +18,64 @@ public class Explorer{
 	this.name = name;
     }
 
-    public void setHP(int HP){
-	this.HP = HP; 
+    public void goRight(Room[] map){
+	if (location == map.length-1){
+	    System.out.println("There's nothing beyond this point. You should go back.");
+	} else {
+	    setLocation(location+1);
+	    System.out.println(getWhereIAm(map));
+	}
     }
 
-    public void setSTR(int STR){
-	this.STR = STR;
+    public void goLeft(Room[] map){
+	if (location == 0){
+	    System.out.println("There's nothing beyond this point. You should go back.");
+	} else {
+	    setLocation(location-1);
+	    System.out.println(getWhereIAm(map));
+	}
     }
 
-    public void setINT(int INT){
-	this.INT = INT;
+    public String getWhereIAm(Room[] map){
+	String here = "";
+	here += "Location: "+map[location].getTitle()+"\nDescription: "+map[location].getDes();
+	return here;
+    }
+    
+    public void add(String thing){
+	if (thing.equals("amulet")){
+	    inventory[1] = 1;
+	    System.out.println("You picked up an amulet");
+	} else if (thing.equals("plate")){
+	    inventory[2] = 2;
+	    System.out.println("You picked up a plate");
+	} else if (thing.equals("spoon")){
+	    inventory[3] = 3;
+	    System.out.println("You picked up a spoon");
+	} else if (thing.equals("small")){
+	    inventory[4] = 4;
+	    System.out.println("You picked up a small key");
+	} else if (thing.equals("knife")){
+	    inventory[5] = 5;
+	    System.out.println("You picked up a knife");
+	} else if (thing.equals("stool")){
+	    inventory[6] = 6;
+	    System.out.println("You picked up a stool");
+	} else if (thing.equals("drugs")){
+	    inventory[7] = 7;
+	    System.out.println("You picked up some drugs");
+	} else if (thing.equals("big")){
+	    inventory[8] = 8;
+	    System.out.println("You picked up a big key");
+	}
     }
 
-    public void setDEX(int DEX){
-	this.DEX = DEX;
-    }
-
-    public String getName(){
-	return name;
-    }
-
-    public int getHP(){
-	return HP;
-    }
-
-    public int getSTR(){
-	return STR;
-    }
-
-    public int getINT(){
-	return INT;
-    }
-
-    public int getDEX(){
-	return DEX;
+    public boolean has(int x){
+	return (inventory[x]==x);
     }
 
     public Explorer(){
-	setName("William");
-	setHP(30);
-	setSTR(1);
-	setINT(1);
-	setDEX(1);
+	setLocation(0);
     }
 
-    public Explorer(String name){
-	setName(name);
-	setHP(30);
-	setSTR(1);
-	setINT(1);
-	setDEX(1);
-    }
-
-    public static void main(String[]args){
-	Explorer A = new Explorer();
-	System.out.println(A.getName());
-	Explorer B = new Explorer("Hello");
-	System.out.println(B.getName());
-    }
 }

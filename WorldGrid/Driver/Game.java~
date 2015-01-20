@@ -1,0 +1,9 @@
+import java.util.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+
+public class Game{
+    public static void main(String[]args){
+	System.out.println("Welcome to the game, Escape the House!\nYour goal is to obviously escape the house using objects that you pick up. You can go from room to room inputing commands such as 'go right' or 'go left'. You can closely look at stuff with the 'look at' command. You can pick up stuff and and them to your inventory with the 'pick up' command. The game will let you know if you can't pick up something.");
+    }
+}
