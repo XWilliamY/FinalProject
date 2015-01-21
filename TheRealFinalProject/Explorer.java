@@ -52,7 +52,7 @@ public class Explorer{
 	} else if (thing.equals("spoon")){
 	    inventory[3] = 3;
 	    System.out.println("You picked up a spoon");
-	} else if (thing.equals("small")){
+	} else if (thing.equals("small") && has(6)){
 	    inventory[4] = 4;
 	    System.out.println("You picked up a small key");
 	} else if (thing.equals("knife")){
@@ -67,12 +67,43 @@ public class Explorer{
 	} else if (thing.equals("big")){
 	    inventory[8] = 8;
 	    System.out.println("You picked up a big key");
+	} else {
+	    System.out.println("You can't get that");
 	}
     }
 
     public boolean has(int x){
 	return (inventory[x]==x);
     }
+
+    public String checkInventory(){
+	String stuff = "";
+	int x = 0;
+	while (x<inventory.length){
+	    if (inventory[x]==x){
+		if (x==1){
+		    stuff+="amulet ";
+		} else if (x==2){
+		    stuff+="plate ";
+		} else if (x==3){
+		    stuff+="spoon ";
+		} else if (x==4){
+		    stuff+="small key ";
+		} else if (x==5){
+		    stuff+="knife ";
+		} else if (x==6){
+		    stuff+="stool ";
+		} else if (x==7){
+		    stuff+="drugs ";
+		} else if (x==8){
+		    stuff+="big key ";
+		}
+	    }
+	    x++;
+	}
+	return stuff;
+    }
+	       
 
     public Explorer(){
 	setLocation(0);
