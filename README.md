@@ -75,3 +75,11 @@ III) Writing goWhere() command, meeting "error: cannot find symbol"
 IV) A wild "NullPointerException" appears! This happens when I run getWhereIAm()
 V) Solved "NullPointerException". goForward() and goBackward() now functional. 
 
+1.19.15 (middle of the night)
+I) Created the story line of the game, Escape the Room, with specific room setup and item locations
+II) Developed Explorer so that it would have the necessary methods such as goRight/Left and add (add stuff to inventory)
+III) Started on Game.java, it can:
+A) Give an intro to the game
+B) Created the map and the explorer
+C) Listen to commands such as "go left" or "pick up spoon"
+
