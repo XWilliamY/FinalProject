@@ -31,7 +31,8 @@ public class Game{
 		String what = scan.next();
 		if (what.equals("key")){
 		    System.out.println("What type of key?");
-		} else {
+		}
+		else {
 		    you.add(what);
 		}
 	    } else if (firstword.equals("look") && scan.next().equals("at")){

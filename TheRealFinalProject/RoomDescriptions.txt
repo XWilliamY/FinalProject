@@ -1,0 +1,7 @@
+Front Door:You'll need the key to open the DOOR and get outta here!:0]]
+Hallway:The hallway is dimly lit by a hanging chandelier. There's a CHEST to your right. You need a passcode and a key to open it.:1]]
+Kitchen: There's a gigantic REFRIGERATOR to your right. So big that you can't reach the top! There are CABINETS lining the walls with DRAWERS below them.:2,3,4]]
+First Bedroom:Wow, this room is really clean for a bedroom. There's a CLOSET to your left. There's a BED in the center and to the right there's a work table with a COMPUTER on it.:5]]
+Second Bedroom:This room is really messy. There's a bed in the center with so many clothes scattered on it that it would be impossible to look through it. There's a STOOL to the side of the bed.:6]]
+Bathroom:This is the last room in the house. There's a medicine CABINET. A sink. A toilet. A shower. Just your usual bathroom.:7]]
+Attic:It's bare with no lights but in the middle there's a table with one lamp shining down on a BIG KEY.:8]]
